@@ -19,6 +19,7 @@ driver = webdriver.Remote(
     desired_capabilities=DesiredCapabilities.FIREFOX
 )
 
+
 driver.get("http://www.google.com")
 if not "Google" in driver.title:
     raise Exception("Unable to load google page!")
